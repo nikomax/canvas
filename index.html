@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+
+<canvas id="mycanvas" width="600" height="600"></canvas>
+
+<script>
+    var canvas = document.getElementById('mycanvas');
+    var context = canvas.getContext('2d');
+
+    var time = 0;
+    function draw(){
+        time++;
+
+        context.clearRect(0,0,600,600);
+
+        context.beginPath();
+        for (var n = 0; n < 200; n++) {
+            var x = 200 + (140+2*Math.sin((n+5)/1.38))*Math.sin(n*2*Math.PI/200 + time/290 );
+            var y = 200 + (140+2*Math.sin((n+5)/1.38))*Math.cos(n*2*Math.PI/200 + time/290 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'black';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var m = 0; m < 200; m++) {
+
+            var x = 200 + (135+3*Math.sin(m/1.38))*Math.sin(m*2*Math.PI/200 + time/290 );
+            var y = 200 + (135+3*Math.sin(m/1.38))*Math.cos(m*2*Math.PI/200 + time/290 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'white';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+
+        context.beginPath();
+        for (var t = 0; t < 200; t++) {
+            var x = 200 + (125+2*Math.sin((t+5)/1.38))*Math.sin(t*2*Math.PI/200 + time/270 );
+            var y = 200 + (125+2*Math.sin((t+5)/1.38))*Math.cos(t*2*Math.PI/200 + time/270 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'black';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var u = 0; u < 200; u++) {
+
+            var x = 200 + (120+3*Math.sin(u/1.38))*Math.sin(u*2*Math.PI/200 + time/270 );
+            var y = 200 + (120+3*Math.sin(u/1.38))*Math.cos(u*2*Math.PI/200 + time/270 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'white';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+
+        context.beginPath();
+        for (var r = 0; r < 200; r++) {
+            var x = 200 + (110+2*Math.sin((r+5)/1.59))*Math.sin(r*2*Math.PI/200 + time/250 );
+            var y = 200 + (110+2*Math.sin((r+5)/1.59))*Math.cos(r*2*Math.PI/200 + time/250 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'black';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var k = 0; k < 200; k++) {
+
+            var x = 200 + (105+3*Math.sin(k/1.59))*Math.sin(k*2*Math.PI/200 + time/250 );
+            var y = 200 + (105+3*Math.sin(k/1.59))*Math.cos(k*2*Math.PI/200 + time/250 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'white';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+
+        context.beginPath();
+        for (var j = 0; j < 200; j++) {
+            var x = 200 + (95+2*Math.sin((j+6)/1.99))*Math.sin(j*2*Math.PI/200 + time/230 );
+            var y = 200 + (95+2*Math.sin((j+6)/1.99))*Math.cos(j*2*Math.PI/200 + time/230 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'black';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var i = 0; i < 200; i++) {
+
+            var x = 200 + (90+3*Math.sin(i/1.99))*Math.sin(i*2*Math.PI/200 + time/230 );
+            var y = 200 + (90+3*Math.sin(i/1.99))*Math.cos(i*2*Math.PI/200 + time/230 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'white';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+
+        context.beginPath();
+        for (var q = 0; q < 200; q++) {
+            var x = 200 + (80+2*Math.sin((q+6)/1.99))*Math.sin(q*2*Math.PI/200 + time/200 );
+            var y = 200 + (80+2*Math.sin((q+6)/1.99))*Math.cos(q*2*Math.PI/200 + time/200 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'black';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var w = 0; w < 200; w++) {
+            var x = 200 + (75+3*Math.sin(w/1.99))*Math.sin(w*2*Math.PI/200 + time/200 );
+            var y = 200 + (75+3*Math.sin(w/1.99))*Math.cos(w*2*Math.PI/200 + time/200 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'white';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var p = 0; p < 200; p++) {
+            var x = 200 + (65+1.5*Math.sin((p+6)/2.28))*Math.sin(p*2*Math.PI/200 + time/170 );
+            var y = 200 + (65+1.5*Math.sin((p+6)/2.28))*Math.cos(p*2*Math.PI/200 + time/170 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'black';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+        context.beginPath();
+        for (var o = 0; o < 200; o++) {
+            var x = 200 + (60+2.5*Math.sin(o/2.28))*Math.sin(o*2*Math.PI/200 + time/170 );
+            var y = 200 + (60+2.5*Math.sin(o/2.28))*Math.cos(o*2*Math.PI/200 + time/170 );
+            context.lineTo(x,y);
+        }
+        context.fillStyle = 'white';
+        context.closePath();
+        context.stroke();
+        context.fill();
+
+
+        window.requestAnimationFrame(draw);
+    }
+
+    draw();
+
+
+</script>
+
+</body>
+</html>
